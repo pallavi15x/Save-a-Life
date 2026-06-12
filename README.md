@@ -20,6 +20,35 @@
 
 ---
 
+## 📂 Project Structure
+
+```text
+src/
+├── App.jsx                  # Root component handling routing
+├── index.css                # Global styles, variables, and complex animations
+├── main.jsx                 # Entry point
+├── components/              # Reusable UI elements
+│   ├── chatbot/             # AI Assistant interface
+│   ├── home/                # Landing page specific components (BodyDiagram, Hero)
+│   ├── layout/              # Global layout elements (Navbar, Footer)
+│   └── ui/                  # Generic UI components (LoaderSplash, ScrollToTop)
+├── context/                 # Global state management
+│   ├── LanguageContext.jsx  # i18n localization state handling 17+ languages
+│   └── ThemeContext.jsx     # Dark/Light mode theme state
+├── data/                    # Static data and localizations
+│   ├── organData.js         # Organ statistics and facts
+│   └── organDataI18n.js     # Multilingual translation dictionaries
+└── pages/                   # Route-level components
+    ├── HomePage.jsx         # Main landing page
+    ├── LearnPage.jsx        # Educational resources
+    ├── MythsPage.jsx        # Myth-busting facts
+    ├── RegisterPage.jsx     # Donor registration form
+    ├── StoriesPage.jsx      # Donor testimonials
+    └── CampaignsPage.jsx    # Awareness campaigns
+```
+
+---
+
 ## 🛠️ Tech Stack
 
 - **Frontend Framework:** React 18
@@ -40,20 +69,32 @@ To run this project locally on your machine:
    git clone https://github.com/pallavi15x/Save-a-Life.git
    ```
 
-2. **Install dependencies:**
+2. **Navigate into the folder:**
+   ```bash
+   cd Save-a-Life/save
+   ```
+
+3. **Install dependencies:**
    ```bash
    npm install
    ```
 
-3. **Start the development server:**
+4. **Start the development server:**
    ```bash
    npm run dev
    ```
 
-4. **Build for production:**
-   ```bash
-   npm run build
-   ```
+---
+
+## 📜 Scripts
+
+| Command | Description |
+| :--- | :--- |
+| `npm run dev` | Start dev server with HMR |
+| `npm run build` | Production build |
+| `npm run preview` | Preview production build |
+| `npm run lint` | Run ESLint |
+| `npm run deploy` | Deploy production build to GitHub Pages |
 
 ---
 
