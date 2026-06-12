@@ -24,26 +24,26 @@
 
 ```text
 src/
-├── App.jsx                  # Root component handling routing
-├── index.css                # Global styles, variables, and complex animations
+├── App.jsx                  # Root routing component
+├── index.css                # Global styles & animations
 ├── main.jsx                 # Entry point
 ├── components/              # Reusable UI elements
-│   ├── chatbot/             # AI Assistant interface
-│   ├── home/                # Landing page specific components (BodyDiagram, Hero)
-│   ├── layout/              # Global layout elements (Navbar, Footer)
-│   └── ui/                  # Generic UI components (LoaderSplash, ScrollToTop)
-├── context/                 # Global state management
-│   ├── LanguageContext.jsx  # i18n localization state handling 17+ languages
-│   └── ThemeContext.jsx     # Dark/Light mode theme state
-├── data/                    # Static data and localizations
-│   ├── organData.js         # Organ statistics and facts
-│   └── organDataI18n.js     # Multilingual translation dictionaries
-└── pages/                   # Route-level components
-    ├── HomePage.jsx         # Main landing page
-    ├── LearnPage.jsx        # Educational resources
-    ├── MythsPage.jsx        # Myth-busting facts
-    ├── RegisterPage.jsx     # Donor registration form
-    ├── StoriesPage.jsx      # Donor testimonials
+│   ├── chatbot/             # AI Assistant UI
+│   ├── home/                # Landing page components
+│   ├── layout/              # Navbar & Footer
+│   └── ui/                  # Generic UI components
+├── context/                 # Global state
+│   ├── LanguageContext.jsx  # i18n localization
+│   └── ThemeContext.jsx     # Theme state (Dark/Light)
+├── data/                    # Static data
+│   ├── organData.js         # Organ statistics
+│   └── organDataI18n.js     # Translations
+└── pages/                   # Route components
+    ├── HomePage.jsx         # Landing page
+    ├── LearnPage.jsx        # Educational content
+    ├── MythsPage.jsx        # Myths vs Facts
+    ├── RegisterPage.jsx     # Registration form
+    ├── StoriesPage.jsx      # Testimonials
     └── CampaignsPage.jsx    # Awareness campaigns
 ```
 
