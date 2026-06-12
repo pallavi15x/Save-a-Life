@@ -25,7 +25,7 @@ function App() {
   return (
     <ThemeProvider>
       <LanguageProvider>
-        <Router>
+        <Router basename="/Save-a-Life">
           <ScrollToTop />
           <AnimatePresence mode="wait">
             {isLoading && <LoaderSplash onComplete={() => setIsLoading(false)} />}
